@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audio_projects",
+  "info": {
+    "singularName": "audio-project",
+    "pluralName": "audio-projects",
+    "displayName": "Work",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 240,
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "audio": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "imagecover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "embeddedid": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Category 1",
+        "Category 2",
+        "Category 3",
+        "Category 4",
+        "Category 5",
+        "Category 6"
+      ]
+    },
+    "embedded": {
+      "type": "enumeration",
+      "enum": [
+        "Youtube",
+        "Spotify",
+        "SoundCloud",
+        "ApplePodcasts"
+      ]
+    }
+  }
+}
