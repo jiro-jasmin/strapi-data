@@ -4,7 +4,8 @@
   "info": {
     "singularName": "bestwork",
     "pluralName": "bestworks",
-    "displayName": "Bestwork"
+    "displayName": "Bestwork",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,12 +22,15 @@
       "maxLength": 100
     },
     "audio": {
-      "allowedTypes": [
-        "audios"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "date": {
+      "type": "date"
     }
   }
 }
